@@ -1,0 +1,53 @@
+baseURL = "https://nifi.apache.org"
+title = "Apache NiFi"
+
+languageCode = "en"
+
+contentDir = "source"
+
+disablePathToLower = true
+uglyURLs = true
+enableRobotsTXT = true
+disableBrowserError = true
+timeout = 3000
+
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+# Highlighting config. See https://help.farbox.com/pygments.html
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsStyle = "emacs"
+
+# Enable Git variables like commit, lastmod
+enableGitInfo = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[blackfriday]
+# hrefTargetBlank = true # We don't want everything opened in a new window
+fractions = false
+
+[frontmatter]
+date = ["date", ":filename", "publishDate", "lastmod"]
+
+[params]
+repositoryUrl = "https://github.com/apache/nifi"
+repositorySourceBranch = "main"
+
+siteRepositoryUrl = "https://github.com/apache/nifi-site"
+siteRepositorySourceBranch = "main"
+assets = "assets"
+
+matomoSiteId = 28
+productionHost = "nifi.apache.org"
+
+dynamicDownloadPathUrl = "https://www.apache.org/dyn/closer.lua?path=/nifi"
+downloadPathUrl = "https://downloads.apache.org/nifi"
+archiveDownloadPathUrl = "https://archive.apache.org/dist/nifi"
+mavenCentralDownloadPathUrl = "https://repo1.maven.org/maven2/org/apache/nifi"
+
+currentProjectVersion = "1.19.1"
+currentProjectVersionReleased = "2022-12-07"
+previousProjectVersion = "1.18.0"
+previousProjectVersionReleased = "2022-10-06"
